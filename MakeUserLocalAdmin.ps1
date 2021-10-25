@@ -8,3 +8,4 @@ net localgroup administrators $username /add
 If(Test-Path C:\Temp) { "UserIsLocalAdmin" >> C:\Temp\UserIsLocalAdmin.txt } 
 Else { New-Item -Path "c:\" -Name "Temp" -ItemType "directory"; "UserIsLocalAdmin" >> C:\Temp\UserIsLocalAdmin.txt }
 # 1e extra aanpassing Mark 
+# 2e aanpassing mark
