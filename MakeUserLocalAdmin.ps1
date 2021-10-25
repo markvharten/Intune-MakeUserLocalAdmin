@@ -7,3 +7,4 @@ net localgroup administrators $username /add
 #Create C:\Temp if it does not exist and place a file in C:\Temp for the detection rule
 If(Test-Path C:\Temp) { "UserIsLocalAdmin" >> C:\Temp\UserIsLocalAdmin.txt } 
 Else { New-Item -Path "c:\" -Name "Temp" -ItemType "directory"; "UserIsLocalAdmin" >> C:\Temp\UserIsLocalAdmin.txt }
+# 1e extra aanpassing Mark 
